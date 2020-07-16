@@ -20,7 +20,7 @@ public class Teleporter : MonoBehaviour
             if (portalToPlayer.y < 0f)
             {
                 // Teleport him!
-                Vector3 upperPos = new Vector3(reciever.position.x, reciever.position.y + 4, reciever.position.z);
+                Vector3 upperPos = new Vector3(reciever.position.x, reciever.position.y + 10, reciever.position.z);
                 player.position = upperPos ;
                 
                 playerIsOverlapping = false;
@@ -28,7 +28,7 @@ public class Teleporter : MonoBehaviour
             }
             else
             {
-                Vector3 lowerPos = new Vector3(reciever.position.x, reciever.position.y - 6, reciever.position.z);
+                Vector3 lowerPos = new Vector3(reciever.position.x, reciever.position.y -10, reciever.position.z);
                 player.position = lowerPos ;
                 
                 playerIsOverlapping = false;

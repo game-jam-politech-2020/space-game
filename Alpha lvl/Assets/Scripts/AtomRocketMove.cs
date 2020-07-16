@@ -24,7 +24,7 @@ public class AtomRocketMove : MonoBehaviour
     void Update()
     {
         MovementLogic();
-        //JumpLogic();
+        // _rb.transform.position.z = 0;
     }
 
     private void MovementLogic()

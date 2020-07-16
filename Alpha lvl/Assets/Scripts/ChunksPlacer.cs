@@ -30,7 +30,7 @@ public class ChunksPlacer : MonoBehaviour
 
         int temp;
 
-        temp = randd.Next(0, 2);
+        temp = randd.Next(0, 3);
 
         return temp;
     }
@@ -41,7 +41,7 @@ public class ChunksPlacer : MonoBehaviour
         newChunk.transform.position = spawnedChunks[spawnedChunks.Count - 1].End.position - newChunk.Begin.localPosition;
         spawnedChunks.Add(newChunk);
 
-        if (spawnedChunks.Count >= 4)
+        if (spawnedChunks.Count >= 2)
         {
             Destroy(spawnedChunks[0].gameObject);
             spawnedChunks.RemoveAt(0);
